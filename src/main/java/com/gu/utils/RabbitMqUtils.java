@@ -10,8 +10,8 @@ public class RabbitMqUtils {
 //创建一个连接工厂
         ConnectionFactory factory = new ConnectionFactory();
         //端口号  用户密码
-        factory.setHost("192.168.136.129");
-        factory.setUsername("admin");
+        factory.setHost("192.168.229.130");
+        factory.setUsername("guhuan");
         factory.setPassword("123");
         //创建链接
         Connection connection = factory.newConnection();
