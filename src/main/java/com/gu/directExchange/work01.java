@@ -13,6 +13,7 @@ public class work01 {
         String QUEUE_NAME = "Q1";
         channel.queueDeclare(QUEUE_NAME,false,false,false,null);
         channel.queueBind(QUEUE_NAME,EXCHANGE_NAME,"blank");
+        System.out.println(QUEUE_NAME+"等待接收消息");
 
         DeliverCallback deliverCallback = (consumerTag, delivery)->{
             String message = new String(delivery.getBody(), "UTF-8");
